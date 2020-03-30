@@ -1,0 +1,632 @@
+:root {
+   --pp: peachpuff;
+   --dr: darkred;
+   --fg: forestgreen;
+   --dg: darkgreen;
+   --aq: aquamarine;  
+}
+
+a {
+   text-decoration: none;
+}
+
+h1 {
+   font-family: 'Cinzel', cursive;
+   font-size: 3rem;
+   color: white;
+   text-align: center;
+}
+
+h2 {
+   font-family: 'Cinzel', cursive;
+   font-size: 2.5rem;
+   color: white;
+   text-align: center;
+
+}
+
+h3 {
+   font-family: 'Cinzel', cursive;
+   font-size: 2rem;
+   color: white;
+   text-align: center;
+}
+
+h4 {
+   font-family: 'Josefin Normal', sans-serif;
+   font-size: 1.5rem;
+   color: white;
+}
+
+h5 {
+   font-family: 'Josefin Normal', sans-serif;
+   font-size: 1.25rem;
+   color: white;
+   text-align: center;
+}
+ 
+h6 {
+   font-family: 'Josefin Normal', sans-serif;
+   font-size: 0.8rem;
+   color: white;
+   text-align: center;
+}
+
+
+html {
+   width: 100%;
+   font-size: 20px;
+}
+
+body {
+   margin: auto;
+}
+
+#big-pic {
+   background-image: url(/img/mainpizza.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center -150px;
+}
+
+
+header {
+   display: grid;
+   grid-template-columns: 15% auto 15%;
+   grid-template-rows: 170px 40px;
+}
+
+
+/* ----- LOGO BOX ----- */
+#logo-box {
+   grid-column: 2;
+   height: 160px;
+   width: 100%;
+   margin: 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   justify-items: center;
+   align-items: center;
+}
+
+.fa-facebook-square {
+   color: white;
+   grid-row: 1 / span 3;
+   box-shadow: 0 0 20px black;
+   justify-self: flex-end;
+}
+
+.fa-twitter-square {
+   color: white;
+   grid-row: 1 / span 3;
+   box-shadow: 0 0 20px black;
+}
+
+.logo-top {
+   grid-row: 1 / span 3;
+   background-color: white;
+   padding: 20px 30px;
+   border: white 20px solid;
+   border-radius: 50%;
+   margin-top: -60px;
+   box-shadow: 0 5px 20px black;
+}
+
+.logo-top img {
+   margin-top: 50px;
+}
+
+.address {
+   grid-column: span 2;
+   justify-self: center;
+}
+
+.google-map {
+   grid-column: span 2;
+   margin-top: 10px;
+}
+
+.google-map img{
+   height: 45px;
+}
+
+.phone {
+   grid-row: 3;
+   grid-column: span 2;
+   letter-spacing: 1px;
+}
+
+
+/* ----- NAVIGATION BAR ----- */
+#nav-top {
+   background-color: rgba(0, 0, 0, 0.5);
+   grid-row: 2;
+   grid-column: 1 / -1;
+   display: grid;
+   grid-template-columns: 10% repeat(2, 1fr) 2fr repeat(2, 1fr) 10%;
+   grid-gap: 20px;
+   justify-items: center;
+   align-items: center;
+   height: 40px;
+   border-top: var(--pp) 2px solid;
+   border-bottom: var(--pp) 2px solid;
+   box-shadow: 0 0 20px black;
+}
+
+#nav-top a {
+   font-family: 'Josefin Normal';
+   font-size: 1.2rem;
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   margin-top: -28px;
+}
+
+#nav-top img {
+   height: 100px;
+}
+
+.nav-left {
+   justify-self: right;
+}
+
+.nav-right {
+   justify-self: left;
+}
+
+
+/* ----- FIRST PAGE ----- */
+#first-page {
+   margin-top: 70px;
+   display: grid;
+   grid-template-columns: 10% repeat(5, 1fr) 10%;
+   grid-template-rows: repeat(5, 100px) 140px 100px 130px repeat(2, 150px);
+}
+
+#services {
+   grid-area: 1 / 5 / span 1 / span 2;
+   text-shadow: 0 0 10px black, 0 0 5px black;
+   text-align: right;
+}
+
+#marg-top-box {
+   grid-area: 2 / 2 / span 2 / span 2;
+   display: grid;
+   justify-items: center;
+}
+
+#marg-top-box h2 {
+   color: red;
+   text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px white, 0 0 15px white;
+   align-self: flex-end;
+}
+
+#marg-top-box h3 {
+   color: var(--dg);
+   text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px white, 0 0 15px white;
+   margin-right: -150px;
+}
+
+#marg-top-box h6 {
+   align-self: flex-start;
+   background-color: rgba(0,0,0, 0.75);
+   padding: 10px 30px;
+   border-radius: 5px;
+}
+
+#lunch-top-box {
+   background-color: rgba(0,0,0, 0.75);
+   border-radius: 1rem;
+   grid-area: 3 / 5 / span 2 / span 2;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   justify-items: center;
+   align-items: center;
+}
+
+#lunch-top-box h2 {
+   color: var(--pp);
+   font-size: 2rem;
+   margin-top: 20px;
+   padding: 0 20px;
+}
+
+#lunch-top-box h5 {
+   padding: 15px;
+}
+
+#lunch-top-box h6 {
+   margin-bottom: 20px;
+   text-decoration: none;
+   background-color: red;
+   padding: 8px 20px;
+   font-size: 1rem;
+   border-radius: 0.25rem;
+}
+
+#email-top-box {
+   grid-area: 6 / 3 / span 1 / span 3;
+   background-color: rgba(255, 255, 255, 0.75);
+   border-radius: 25px;
+   display: grid;
+   grid-template-columns: 1fr 3fr 1fr 1fr;
+   grid-template-rows: 1fr 1.5fr;
+   grid-gap: 0 10px;
+   align-items: center;
+}
+
+#email-top-box h5 {
+   grid-column: 1 / span 4;
+   color: black;
+   align-self: flex-end;
+}
+
+#email-top-box input {
+   height: 40px;
+   border-radius: 5px;
+   border: 1px grey solid;
+   grid-column: 2 / span 1;
+   box-shadow: none;
+}
+
+#email-top-box a {
+   background-color: red;
+   color: white;
+   border-radius: 5px;
+   text-align: center;
+   padding: 12px;
+   font-family: 'Josefin Normal', sans-serif;
+   font-size: 1rem;
+}
+
+::placeholder {
+   font-family: 'Josefin Light', sans-serif;
+   font-size: 1rem;
+   text-align: center;
+}
+
+#cater-box {
+   grid-area: 8 / 1 / span 1 / -1;
+   display: grid;
+   border-bottom: white 5px solid;
+   border-top: white 5px solid;
+   outline: rgba(99, 255, 210, 0.85) 5px solid;
+   background-color: rgba(99, 255, 210, 0.85);
+}
+
+#cater-banner {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column: 1 / span 2;
+   grid-gap: 30px;
+}
+
+#cater-banner h1 {
+   text-align: right;
+   color: black;
+   align-self: center;
+}
+
+#cater-banner h4 {
+   text-align: left;
+   font-size: 2.25rem;
+   align-self: center;
+   border-left: white 5px solid;
+   padding-left: 30px;
+   color: var(--dg);
+}
+
+.black-banner {
+   padding: 30px;
+   background-color: black;
+   grid-column: 1 / -1;
+   grid-row: 10 / -1;
+   color: red;
+   display: grid;
+   align-items: center;
+   box-shadow: 0 0 30px aquamarine, 0 0 10px aquamarine;
+}
+
+/* ----- SPECIALS ----- */
+#specials {
+   background: linear-gradient(15deg, #39968f, aquamarine);
+   padding: 70px 10%;
+   display: grid;
+   grid-template-rows: 80px auto 30px;
+   grid-gap: 30px 0;
+}
+
+#specials h1 {
+   text-shadow: 2px 2px 10px black;
+}
+
+#spec-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 380px));
+   grid-gap: 30px;
+   justify-content: center;
+}
+
+.spec-box {
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   grid-gap: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 8px black;
+   padding: 30px 10px;
+}
+
+.spec-box h3 {
+   font-size: 1.75rem;
+}
+
+.spec-price {
+   color: red;
+   text-shadow: 0 0 2px white, 0 0 5px white, 0 0 10px white;
+}
+
+#specials h6 {
+   grid-row: 3;
+   font-family: 'Josefin Light', sans-serif;
+   align-self: center;
+}
+
+/* ----- MARGHERITA - TUESDAY ----- */
+#marg-container {
+   background-image: url(/img/margherita.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top right;
+   padding: 50px 10%;  
+}
+
+#marg-box {
+   background-color: rgba(255, 255, 255, 0.75);
+   display: grid;
+   grid-template-rows: repeat(4, 1fr);
+   grid-template-columns: minmax(300px, 500px);
+   grid-gap: 10px;
+   padding: 50px;
+   width: 500px;
+   border-radius: 20px;
+
+}
+
+#marg-box h1 {
+   font-size: 3.5rem;
+   color: red;
+   text-align: left;
+   
+}
+
+#marg-box h2 {
+   font-size: 3.25rem;
+   color: var(--dg);
+   text-align: left;
+   margin-left: 163px;
+   margin-top: -15px;
+}
+
+#marg-box h5 {
+   color: black;
+   text-align: left;
+   align-self: center;
+}
+
+#marg-box h6 {
+   color: black;
+   text-align: left;
+   align-self: center;
+}
+
+/* ----- LUNCH SPECIALS ----- */
+#lunch-specials {
+   background-image: url(/img/liberty.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   padding: 50px 10%;  
+   display: grid;
+   grid-template-rows: 100px 80px auto;
+}
+
+#lunch-specials h1 {
+   text-shadow: 2px 2px 10px black;
+
+}
+
+#lunch-specials h5 {
+   color: black;
+   margin-bottom: 20px;
+}
+
+#lunch-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+   grid-gap: 10px;
+   justify-content: center;
+}
+
+.lunch-box {
+   background-color: rgba(255, 255, 255, 0.9);
+   border-radius: 20px;
+   display: grid;
+   grid-template-rows: 1fr 2fr 80px;
+   justify-items: center;
+   align-items: center;
+
+}
+
+.lunch-box h3 {
+   background-color: var(--dr);
+   border-radius: 50%;
+   margin: 20px;
+   padding: 20px 30px;
+}
+
+.lunch-box h2 {
+   background-color: red;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   align-self: flex-end;
+   justify-self: stretch;
+   padding: 15px;
+   grid-row: 3 / span 1;
+}
+
+/* ----- MENU - PDF ----- */
+#menu-pdf {
+   background: linear-gradient(darkred, #f83600, #f83600, darkred); ;
+   display: grid;
+   grid-row: auto auto 50px 250px;
+   justify-items: center;
+}
+
+#menu-pdf img {
+   width: 80%;
+   justify-content: center;
+   margin: 20px 0;
+   box-shadow: 0 0 20px white;
+}
+
+#menu-pdf a {
+   background-color: red;
+   padding: 15px 100px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   align-self: center;
+   margin-top: -20px;
+   margin-bottom: 30px;
+}
+
+#menu-pdf .black-banner {
+   height: 150px;
+   grid-row: 4 / 4;
+}
+
+/* ----- CATERING - PDF ----- */
+#cater-pdf {
+   background: linear-gradient(darkred, #f83600, #f83600, darkred); ;
+   display: grid;
+   grid-row: auto auto 50px;
+   justify-items: center;
+}
+
+#cater-pdf img {
+   width: 80%;
+   justify-content: center;
+   margin: 20px 0;
+   box-shadow: 0 0 20px white;
+}
+
+#cater-pdf a {
+   background-color: red;
+   padding: 15px 100px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   align-self: center;
+   margin-top: -20px;
+   margin-bottom: 30px;
+}
+
+/* ----- FOOTER ----- */
+footer {
+   background: linear-gradient(30deg, darkgreen, forestgreen, darkgreen);
+   display: grid;
+   grid-template-rows: repeat(5, auto);
+   grid-gap: 5px;
+}
+
+#info-box {
+   border-top: 5px solid white;
+   border-bottom: 5px solid white;
+   padding: 5px;
+   margin: 80px 10%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 0 20px;
+   align-items: center;
+}
+
+#hours {
+   display: grid;
+   grid-template-rows: 60px repeat(3, 40px);
+   grid-gap: 15px;
+   align-items: center;
+}
+
+
+#services-bottom {
+   background-color: white;
+   padding: 30px 0;
+}
+
+#services-bottom h2 {
+   color: var(--dg);
+   line-height: 1.5;
+}
+
+#info-bottom {
+   display: grid;
+   grid-template-rows: 1fr repeat(3, auto);
+   grid-gap: 20px;
+   justify-items: center;
+   align-items: center;
+}
+
+#fabs {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 30px;
+   align-items: center;
+}
+
+#fabs i {
+   box-shadow: none;
+}
+
+footer h6 {
+   padding: 20px;
+}
+
+#divisor {
+   background-color: var(--dr);
+   height: 20px;
+}
+
+#nav-bottom {
+   padding: 50px 10%;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+}
+
+#nav-bottom a {
+   color: white;
+   text-align: center;
+}
+
+@font-face {
+   font-family: 'Cinzel';
+   font-style: normal;
+   font-weight: 700;
+   src: local('Cinzel Decorative Bold'), local('CinzelDecorative-Bold'), url(https://fonts.gstatic.com/s/cinzeldecorative/v8/daaHSScvJGqLYhG8nNt8KPPswUAPniZoadlESTGplhXF.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ @font-face {
+   font-family: 'Josefin Light';
+   font-style: normal;
+   font-weight: 300;
+   src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10hoJky_A.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ @font-face {
+   font-family: 'Josefin Normal';
+   font-style: normal;
+   font-weight: 400;
+   src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx4Vn8sig.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
